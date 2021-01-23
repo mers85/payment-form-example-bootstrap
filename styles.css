@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
 }
 
-input:focus:invalid,  text:focus:invalid { /* when a field is considered invalid by the browser */
+input:focus:invalid,  text:focus:invalid{ /* when a field is considered invalid by the browser */
     box-shadow: 0 0 5px #d45252;
     border-color: #b03535
 }
@@ -15,4 +15,22 @@ input:focus:invalid,  text:focus:invalid { /* when a field is considered invalid
 input:focus:valid,  text:focus:valid { /* when a field is considered invalid by the browser */
     box-shadow: 0 0 5px green;
     border-color: green;
+}
+
+select:focus:invalid { /* when a field is considered invalid by the browser */
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+select:focus:valid { /* when a field is considered invalid by the browser */
+    box-shadow: 0 0 5px green;
+    border-color: green;
+}
+
+
+input[type="radio"]:checked + .error-message {
+     display: none; 
+} 
+input[type="radio"]:invalid + .error-message {
+     display: block; 
 }
