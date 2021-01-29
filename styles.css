@@ -19,7 +19,7 @@ input:focus:valid,  text:focus:valid { /* when a field is considered invalid by 
 
 select:focus:invalid { /* when a field is considered invalid by the browser */
     box-shadow: 0 0 5px #d45252;
-    border-color: #b03535
+    border-color: #b03535;
 }
 
 select:focus:valid { /* when a field is considered invalid by the browser */
@@ -28,9 +28,7 @@ select:focus:valid { /* when a field is considered invalid by the browser */
 }
 
 
-input[type="radio"]:checked + .error-message {
-     display: none; 
-} 
-input[type="radio"]:invalid + .error-message {
-     display: block; 
+input[type="radio"]:invalid {
+    box-shadow: 0 0 10px #d45252;
+    border-color: #b03535;
 }
